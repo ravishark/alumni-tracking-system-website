@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+div.search{
+top:1.5%;
+left:83%;
+position:absolute;
+transform:translate(-10%,-10%);
+}
+i{
+font-style:normal;
+font-family:fontAwesome;
+font-size:20px;
+padding:18px;
+background:rgb(50,50,50);
+color:#fff;
+border-radius:50%;
+left:-55px;
+top:2px;
+transition-duration:.5s;
+position:relative;
+}
+input{
+padding:15px;
+border:none;
+border-radius:40px;
+width:15px;
+transition-duration:.5s;
+position:relative;
+}
+
+div.search:hover input,div.search input:focus{
+width:175px;
+border-radius:50px;
+}
+div.search:hover input{
+box-shadow:0 0 5px 0 black;
+}
+div.search input:focus{
+box-shadow:0 0 10px 0 black;
+}
+div.search:hover i{
+background:black;
+cursor:pointer;
+}
+.slider_text{
+font-size:50px;
+width:675px;
+height:5px;
+padding-left:15px;
+//overflow:hidden;
+text-align:center;
+}
+/*.slider_text div{
+color:#fff;
+height:50px;
+margin-bottom:50px;
+//padding:2px 15px;
+text-align:center;
+}*/
+.sd1{
+background-color:lightgreen;
+animation:slide 5s linear infinite;
+}
+.sd2{
+background-color:skyblue;
+}
+@keyframes slide{
+0%{margin-top:-300px;}
+45%{margin-top:-200px;}
+70%{margin-top:-100px;}
+100%{margin-top:0px;}
+}
